@@ -22,4 +22,7 @@ out/
 CMakeCache.txt
 CMakeFiles/
 cmake_install.cmake
-install_manifest.txt 
+install_manifest.txt
+
+# Large dependency files
+.deps/windows-deps-2023-04-12-x64.zip 
