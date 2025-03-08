@@ -1,0 +1,5 @@
+LIBRARY obs-frontend-api
+EXPORTS
+    obs_frontend_get_main_window
+    obs_frontend_add_dock
+    obs_frontend_push_ui_translation 

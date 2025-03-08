@@ -1,0 +1,65 @@
+{
+    "name": "obs-speech-timer",
+    "version": "1.0.0",
+    "website": "https://github.com/your-username/obs-speech-timer",
+    "author": "Your Name",
+    "email": "your.email@example.com",
+    "dependencies": {
+        "prebuilt": {
+            "version": "2023-04-12",
+            "baseUrl": "https://github.com/obsproject/obs-deps/releases/download",
+            "label": "Pre-built dependencies for Windows",
+            "hashes": {
+                "windows-x64": "c13a14a1acc4224b21304d97b63da4121de1ed6981297e50496fbc474abc0503"
+            }
+        },
+        "qt6": {
+            "version": "6.8.2",
+            "baseUrl": "https://cdn01.downloads.qt.io/online/qtsdkrepository/windows_x86/desktop/qt6_682",
+            "label": "Qt 6 for Windows",
+            "hashes": {
+                "windows-x64": "qt.qt6.682.win64_msvc2019_64"
+            },
+            "debugSymbols": false
+        },
+        "obs-studio": {
+            "version": "30.0.2",
+            "baseUrl": "https://github.com/obsproject/obs-studio/releases/download",
+            "label": "OBS Studio",
+            "hashes": {
+                "windows-x64": "v30.0.2"
+            }
+        }
+    },
+    "platformConfig": {
+        "windows": {
+            "buildSpec": "cmake --preset windows-release",
+            "cmakeInstall": true,
+            "visualStudio": "Visual Studio 17 2022",
+            "windowsSdk": "10.0.22621.0",
+            "qtVersion": "6.8.2",
+            "qtPath": "C:/Qt/6.8.2/msvc2022_64",
+            "architecture": "x64"
+        },
+        "macos": {
+            "buildSpec": "cmake --preset macos-release",
+            "cmakeInstall": true,
+            "bundleId": "com.yourname.obs-speech-timer"
+        },
+        "linux": {
+            "buildSpec": "cmake --preset linux-release",
+            "cmakeInstall": true
+        }
+    },
+    "cmake": {
+        "build_type": "Release",
+        "dependencies": {
+            "obs-studio": {
+                "path": "D:/Obs-studio/installed"
+            },
+            "qt": {
+                "path": "C:/Qt/6.8.2/msvc2022_64"
+            }
+        }
+    }
+} 

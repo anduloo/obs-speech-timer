@@ -1,0 +1,18 @@
+LIBRARY obs
+EXPORTS
+    obs_module_load
+    obs_module_unload
+    obs_module_set_pointer
+    obs_current_module
+    obs_module_ver
+    obs_module_set_locale
+    obs_module_free_locale
+    obs_module_text
+    obs_module_get_string
+    obs_frontend_get_main_window
+    obs_frontend_add_dock
+    obs_frontend_push_ui_translation
+    blog
+    text_lookup_destroy
+    text_lookup_getstr
+    obs_module_load_locale 

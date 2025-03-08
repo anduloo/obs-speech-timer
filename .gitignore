@@ -1,0 +1,25 @@
+# Build directories
+build/
+out/
+
+# IDE files
+.vs/
+.vscode/
+*.user
+*.suo
+*.db
+*.opendb
+
+# Compiled files
+*.obj
+*.exe
+*.dll
+*.lib
+*.exp
+*.pdb
+
+# CMake files
+CMakeCache.txt
+CMakeFiles/
+cmake_install.cmake
+install_manifest.txt 
