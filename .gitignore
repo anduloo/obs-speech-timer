@@ -1,7 +1,7 @@
 # Build directories
 build/
 out/
-obs-plugin-countdown/
+
 
 # IDE files
 .vs/
